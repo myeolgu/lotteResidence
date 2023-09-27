@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<!--<![endif]-->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta charset="utf-8" />
+		<title></title>
+		<link href="./css/style.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<h1 class="hide-txt">logo</h1>
+			</div>
+		</header>
+		
+		<div class="contents">
+			<!-- 캐러셀 형 : 탭 메뉴 -->
+			<ul class="tab">
+				<li class="is-active">이미지 갤러리</li>
+				<li>영상 갤러리</li>
+			</ul> 			
+
+			<div class="swiper swiper-paralix">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./image/img_contents_01.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./image/img_contents_02.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./image/img_contents_03.jpg" alt="">
+						</div>
+				</div>
+			</div>
+
+
+			<div class="swiper swiper-carousel">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide" data-swiper-parallax="-1000">
+							<img src="./image/img_contents_01.jpg"  data-swiper-parallax="-1000" alt="">
+						</div>
+						<div class="swiper-slide"  data-swiper-parallax="-1000">
+							<img src="./image/img_contents_01.jpg"  data-swiper-parallax="-1000" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./image/img_contents_02.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./image/img_contents_03.jpg" alt="">
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script><script src="./js/main.js"></script>
+</html>
