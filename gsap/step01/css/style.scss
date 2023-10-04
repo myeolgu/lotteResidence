@@ -1,0 +1,84 @@
+@import url('./reset.css');
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  // PC 
+  --pc-width: 1400px;
+}
+
+.hide-txt {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px)
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+
+  .logo {
+    width: 66px;
+    height: 53px;
+    background: url('../image/logo.png') 50% 50% / 100% no-repeat;
+  }
+}
+
+.contents {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  .tit {
+    margin-top: 60px;
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .breadcrumbs {
+    font-size: 20px;
+    font-weight: 500;
+    color: #999;
+  }
+
+  .tit-sub {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 40px;
+  }
+
+}
+
+.tab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  li {
+    padding: 0 20px;
+    font-size: 20px;
+    color: #bababa;
+    cursor: pointer;
+
+    &.is-active {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}

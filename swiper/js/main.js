@@ -17,17 +17,17 @@ let swiper01 = new Swiper(".swiper-paralix", {
    */
   on: {
     progress: function () {
-      let slideElements = Array.from(this.slides);
+      const slideElements = Array.from(this.slides);
       slideElements.forEach(slide => {
-        let slideProgress = slide.progress; 
-        let innerOffset = this.width * 0.5;
-        let innerTranslate = slideProgress * innerOffset;
+        const slideProgress = slide.progress;
+        const innerOffset = this.width * 0.5;
+        const innerTranslate = slideProgress * innerOffset;
         slide.querySelector("img").style.transform = "translateX(" + innerTranslate + "px)";
       });
     },
-    
+
     setTransition: function (speed) {
-      let slideEl = Array.from(this.slides);
+      const slideEl = Array.from(this.slides);
       slideEl.forEach(slide => {
         slide.style.transition = speed + "ms";
         slide.querySelector("img").style.transition = speed + "ms";
@@ -37,20 +37,77 @@ let swiper01 = new Swiper(".swiper-paralix", {
 });
 
 
-
 // swiper-carousel 작업
 const swiper02 = new Swiper(".swiper-carousel", {
   centeredSlides: true,
-  spaceBetween: 20,
+  spaceBetween: 10,
   initialSlide: 1,
   loop: true,
-  speed: 400,
+  speed: 1000,
   slidesPerView: '1.1',
+  on: {
+    progress: function () {
+      const slideElements2 = Array.from(this.slides);
+      slideElements2.forEach(slide => {
+        const slideProgress = slide.progress;
+        const innerOffset = -50;
+        const innerTranslate = slideProgress * 20 + innerOffset;
+
+        console.log(innerTranslate);
+
+        slide.querySelector("img").style.transform = "translateX(" + innerTranslate + "%)";
+      });
+    },
+
+    setTransition: function (speed) {
+      const slideEl = Array.from(this.slides);
+      slideEl.forEach(slide => {
+        slide.style.transition = speed + "ms";
+        slide.querySelector("img").style.transition = speed + "ms";
+      })
+    },
+  }
 });
 
+// swiper-scale 작업
+const swiper03 = new Swiper(".swiper-scale", {
+  centeredSlides: true,
+  spaceBetween: 10,
+  initialSlide: 1,
+  loop: true,
+  speed: 1000,
+  slidesPerView: '1.1',
+  on: {
+    progress: function () {
+      const slideElements = Array.from(this.slides);
+      slideElements.forEach(slide => {
+        const slideProgress = slide.progress;
+        const innerOffset = -50;
+        const innerTranslate = slideProgress * 10 + innerOffset;
 
+        const innerScale = 100;
+        let innerScaleForm; 
 
+        if ( slideProgress < 0 ) {
+          innerScaleForm = slideProgress * -20 + innerScale;
+        } else {
+          innerScaleForm = slideProgress * 20 + innerScale;
+        }
+       
+        slide.querySelector("img").style.transform = "translateX(" + innerTranslate + "%) scale(" + innerScaleForm + "%)";
 
+      });
+    },
+
+    setTransition: function (speed) {
+      const slideEl = Array.from(this.slides);
+      slideEl.forEach(slide => {
+        slide.style.transition = speed + "ms";
+        slide.querySelector("img").style.transition = speed + "ms";
+      })
+    },
+  }
+});
 
 
 
