@@ -36,7 +36,6 @@ let swiper01 = new Swiper(".swiper-paralix", {
   }
 });
 
-
 // swiper-carousel 작업
 const swiper02 = new Swiper(".swiper-carousel", {
   centeredSlides: true,
@@ -52,9 +51,6 @@ const swiper02 = new Swiper(".swiper-carousel", {
         const slideProgress = slide.progress;
         const innerOffset = -50;
         const innerTranslate = slideProgress * 20 + innerOffset;
-
-        console.log(innerTranslate);
-
         slide.querySelector("img").style.transform = "translateX(" + innerTranslate + "%)";
       });
     },
@@ -84,18 +80,12 @@ const swiper03 = new Swiper(".swiper-scale", {
         const slideProgress = slide.progress;
         const innerOffset = -50;
         const innerTranslate = slideProgress * 10 + innerOffset;
-
         const innerScale = 100;
+
+        // Scale 값을 담을 변수 선언
         let innerScaleForm; 
-
-        if ( slideProgress < 0 ) {
-          innerScaleForm = slideProgress * -20 + innerScale;
-        } else {
-          innerScaleForm = slideProgress * 20 + innerScale;
-        }
-       
+        innerScaleForm = slideProgress < 0 ? slideProgress * -20 + innerScale : slideProgress * 20 + innerScale;       
         slide.querySelector("img").style.transform = "translateX(" + innerTranslate + "%) scale(" + innerScaleForm + "%)";
-
       });
     },
 
