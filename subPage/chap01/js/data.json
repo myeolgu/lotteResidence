@@ -83,7 +83,7 @@
         "month": 9,
         "day": 14
       },
-      "allDay": true,
+      "allDay": false,
       "title": "Dexter BD",
       "color": "#37bbe4"
     },
@@ -93,86 +93,86 @@
         "month": 9,
         "day": 25
       },
-      "allDay": true,
+      "allDay": false,
       "title": "Luke BD",
       "color": "#37bbe4"
     },
     {
       "recurring": {
-        "repeat": "weekly",
+        "repeat": "yearly",
         "weekDays": "WE"
       },
-      "allDay": true,
-      "title": "Employment (Semi-weekly)",
+      "allDay": false,
+      "title": "Employment (Semi-yearly)",
       "color": "#228c73"
     },
     {
       "start": "2023-09-09T22:00:00.000Z",
       "end": "2023-09-14T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Sam OFF",
       "color": "#ca4747"
     },
     {
       "start": "2023-09-17T22:00:00.000Z",
       "end": "2023-09-28T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Europe tour",
       "color": "#56ca70"
     },
     {
       "start": "2023-02-06T23:00:00.000Z",
       "end": "2023-02-24T23:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Dean OFF",
       "color": "#99ff33"
     },
     {
       "start": "2023-03-04T23:00:00.000Z",
       "end": "2023-03-13T23:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Mike OFF",
       "color": "#e7b300"
     },
     {
       "start": "2023-05-06T22:00:00.000Z",
       "end": "2023-05-15T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "John OFF",
       "color": "#669900"
     },
     {
       "start": "2023-05-31T22:00:00.000Z",
       "end": "2023-06-10T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Carol OFF",
       "color": "#6699ff"
     },
     {
       "start": "2023-07-01T22:00:00.000Z",
       "end": "2023-07-16T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Jason OFF",
       "color": "#cc9900"
     },
     {
       "start": "2023-08-05T22:00:00.000Z",
       "end": "2023-08-13T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Ashley OFF",
       "color": "#339966"
     },
     {
       "start": "2023-09-09T22:00:00.000Z",
       "end": "2023-09-19T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Marisol OFF",
       "color": "#8701a9"
     },
     {
       "start": "2023-09-30T22:00:00.000Z",
       "end": "2023-10-11T22:00:00.000Z",
-      "allDay": true,
+      "allDay": false,
       "title": "Sharon OFF",
       "color": "#cc6699"
     },
@@ -182,7 +182,7 @@
         "month": 12,
         "day": 25
       },
-      "allDay": true,
+      "allDay": false,
       "title": "Christmas Day",
       "color": "#ff0066"
     },
@@ -192,7 +192,7 @@
         "month": 1,
         "day": 1
       },
-      "allDay": true,
+      "allDay": false,
       "title": "New Year's day",
       "color": "#99ccff"
     },
@@ -202,7 +202,7 @@
         "month": 4,
         "day": 1
       },
-      "allDay": true,
+      "allDay": false,
       "title": "April Fool's Day",
       "color": "#ff6666"
     },
@@ -212,7 +212,7 @@
         "month": 11,
         "day": 2
       },
-      "allDay": true,
+      "allDay": false,
       "title": "File Form 720 for the third quarter",
       "color": "#147ea6"
     },
@@ -222,7 +222,7 @@
         "month": 11,
         "day": 2
       },
-      "allDay": true,
+      "allDay": false,
       "title": "File Form 730 and pay tax on wagers accepted during September",
       "color": "#a73a4e"
     },
@@ -232,7 +232,7 @@
         "month": 11,
         "day": 2
       },
-      "allDay": true,
+      "allDay": false,
       "title": "File Form 2290 and pay the tax for vehicles first used during September",
       "color": "#218e0d"
     },
@@ -242,7 +242,7 @@
         "month": 11,
         "day": 2
       },
-      "allDay": true,
+      "allDay": false,
       "title": "File Form 941 for the third quarter",
       "color": "#a67914"
     },
@@ -252,7 +252,7 @@
         "month": 11,
         "day": 2
       },
-      "allDay": true,
+      "allDay": false,
       "title": "Deposit FUTA owed through Sep if more than $500",
       "color": "#3c0707"
     },
@@ -262,8 +262,8 @@
         "month": 11,
         "day": 30
       },
-      "allDay": true,
-      "title": "Deposit payroll tax for payments on Nov 21-24 if the semiweekly deposit rule applies",
+      "allDay": false,
+      "title": "Deposit payroll tax for payments on Nov 21-24 if the semiyearly deposit rule applies",
       "color": "#14a618"
     },
     {
@@ -272,7 +272,7 @@
         "month": 11,
         "day": 30
       },
-      "allDay": true,
+      "allDay": false,
       "title": "File Form 730 and pay tax on wagers accepted during October",
       "color": "#722ac1"
     },
@@ -282,7 +282,7 @@
         "month": 11,
         "day": 30
       },
-      "allDay": true,
+      "allDay": false,
       "title": "File Form 2290 and pay the tax for vehicles first used during October",
       "color": "#256069"
     }

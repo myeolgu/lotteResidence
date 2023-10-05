@@ -150,3 +150,32 @@ header {
   text-align: left !important;
   width: 100%;
 }
+
+.mbsc-event .mbsc-ltr {
+  display: none !important;
+}
+
+.mbsc-custum-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mbsc-circle {
+  border-radius: 10px;
+  min-width: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.mbsc-tag {
+  display: flex;
+  align-items: center;
+  .mbsc-tit {
+    padding-left: 4px;
+  }
+}
+
+.mbsc-calendar-controls {
+  justify-content: center;
+}
