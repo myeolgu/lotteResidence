@@ -2,8 +2,9 @@
 let swiper01 = new Swiper(".swiper-paralix", {
   loop: true,
   speed: 1000,
+  watchSlidesProgress:true,
   /**
-   * watchSlidesProgress
+   * 
    * 
    * True의 경우
    * watchSlidesProgress는 진행 상태를 지속적으로 업데이트 됩니다.
@@ -40,10 +41,11 @@ let swiper01 = new Swiper(".swiper-paralix", {
 const swiper02 = new Swiper(".swiper-carousel", {
   centeredSlides: true,
   spaceBetween: 10,
-  initialSlide: 1,
   loop: true,
   speed: 1000,
+  loopAdditionalSlides: 1,
   slidesPerView: '1.1',
+  watchSlidesProgress:true,
   on: {
     progress: function () {
       const slideElements2 = Array.from(this.slides);
@@ -73,6 +75,8 @@ const swiper03 = new Swiper(".swiper-scale", {
   loop: true,
   speed: 1000,
   slidesPerView: '1.1',
+  loopAdditionalSlides: 1,
+  watchSlidesProgress:true,
   on: {
     progress: function () {
       const slideElements = Array.from(this.slides);
