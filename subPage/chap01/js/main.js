@@ -53,8 +53,8 @@ let inst = mobiscroll.eventcalendar('.vl-calendar', {
     if (startmatch && startDate != endDate) {
       return '<div class="mbsc-custum-box">' +
         '<div class="mbsc-tag">' +
-        '<div class="mbsc-circle" style="background-color:' + data.color + '"></div>' +
-        '<div class="mbsc-tit">' + data.title + '</div>' +
+          '<div class="mbsc-circle" style="background-color:' + data.color + '"></div>' +
+          '<div class="mbsc-tit">' + data.title + '</div>' +
         '</div>' +
         '<div class="mbsc-event-time">' + startDate + '일 ~ ' + endDate + '일 </div>' +
         '</div>';
@@ -75,7 +75,6 @@ let inst = mobiscroll.eventcalendar('.vl-calendar', {
   onLabelClick: function (event, inst) {
     if (event.domEvent.target.classList.contains('md-custom-event-btn')) {
       event.domEvent.stopPropagation();
-
     }
   },
 
@@ -86,9 +85,6 @@ let inst = mobiscroll.eventcalendar('.vl-calendar', {
   },
 
 });
-
-
-
 
 mobiscroll.getJson('../chap01/js/data.json', function (events) {
   inst.setEvents(events);
